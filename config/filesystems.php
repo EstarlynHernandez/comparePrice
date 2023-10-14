@@ -39,6 +39,8 @@ return [
         'siteMap' => [
             'driver' => 'local',
             'root' => storage_path('xmlSiteMap'),
+            'url' => env('APP_URL').'/storage/xml',
+            'visibility' => 'public',
             'throw' => false,
         ],
 

@@ -26,6 +26,6 @@ class test extends Command
      */
     public function handle(BaseProductManagement $management)
     {
-        $management->getXml();
+        $management->saveNext();
     }
 }
