@@ -36,20 +36,22 @@ return [
             'throw' => false,
         ],
 
-        'siteMap' => [
-            'driver' => 'local',
-            'root' => storage_path('xmlSiteMap'),
-            'url' => env('APP_URL').'/storage/xml',
-            'visibility' => 'public',
-            'throw' => false,
-        ],
-
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
+        ],
+
+
+        'ftp' => [
+            'driver' => 'ftp',
+            'root' => 'file/data',
+            'host' => env('FTP_HOST'),
+            'port' => (int) env('FTP_PORT'),
+            'username' => env('FTP_USERNAME'),
+            'password' => env('FTP_PASSWORD'),
         ],
 
         's3' => [

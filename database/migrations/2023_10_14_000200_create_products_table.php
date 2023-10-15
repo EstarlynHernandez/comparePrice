@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('isbn');
             $table->string('title');
             $table->string('price');
+            $table->string('link');
+            $table->timestamp('compare_at')->default(now()->subYears(10));
             $table->timestamps();
         });
     }

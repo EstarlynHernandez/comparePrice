@@ -13,7 +13,7 @@ class Product extends Model implements ProductInterface
     protected $fillable = [
         'name',
         'title',
-        'store',
+        'winner_store',
         'isbn'
     ];
 }
